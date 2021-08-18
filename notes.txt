@@ -1,0 +1,16 @@
+docker run -itd -e JENKINS_USER=$(id -u) -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/jenkins_home:/var/jenkins_home -v $(which docker):/usr/bin/docker -p 8880:8080 -p 50000:50000  -u root jenkins/jenkins:lts-jdk11
+
+
+
+docker run -itd -e JENKINS_USER=user -v /jenkins_home:/var/jenkins_home  -p 8880:8080 -p 50000:50000  -u root jenkins/jenkins:lts-jdk11
+
+https://medium.com/@schogini/running-docker-inside-and-outside-of-a-jenkins-container-along-with-docker-compose-a-tiny-c908c21557aa
+
+
+localhost:8800
+user: admin
+pass: 1bb0e1e15a614bfe8d3c4cf1491d5da6
+
+Docker file will build the image 
+    use docker run to build the image
+docker compose will find the built image and create a container 
