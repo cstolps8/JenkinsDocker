@@ -7,3 +7,5 @@ echo ''''''''''''''' Administrator password:  '''''''''''''''
 TYPE jenkins_home\secrets\initialAdminPassword
 
 REM TYPE  ''''''''''''''' your password:  '''''''''''''''
+
+pause
